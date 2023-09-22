@@ -1,0 +1,45 @@
+GET http://localhost:8080/Week02_lap_20062501_PhamTrongHieu_Server_war/api/hello-world
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-09-21T145009.404.html
+
+###
+
+GET http://localhost:8080/api/hello-world
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-09-21T143338.404.html
+
+###
+
+GET http://localhost:8080/hello-world
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-09-21T115745.404.html
+
+###
+
+GET http://localhost:8080/hello-world
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-09-21T115739.404.html
+
+###
+
+GET http://localhost:8080/Week02_lap_20062501_PhamTrongHieu_Server_war/hello-world
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-09-21T115548.404.html
+
+###
+
