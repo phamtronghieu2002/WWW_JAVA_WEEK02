@@ -10,39 +10,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="955f08cc-9269-4aca-a71a-e55f09fa2a56" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/webContexts.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/fit/iuh/edu/week02_lap_20062501_phamtronghieu_client/HelloServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/fit/iuh/edu/week02_lap_20062501_phamtronghieu_client/controllers/CartController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/fit/iuh/edu/week02_lap_20062501_phamtronghieu_client/enums/EmployeeStatus.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/fit/iuh/edu/week02_lap_20062501_phamtronghieu_client/enums/ProductStatus.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/fit/iuh/edu/week02_lap_20062501_phamtronghieu_client/models/Customer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/fit/iuh/edu/week02_lap_20062501_phamtronghieu_client/models/Employee.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/fit/iuh/edu/week02_lap_20062501_phamtronghieu_client/models/Order.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/fit/iuh/edu/week02_lap_20062501_phamtronghieu_client/models/OrderDetail.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/fit/iuh/edu/week02_lap_20062501_phamtronghieu_client/models/Product.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/fit/iuh/edu/week02_lap_20062501_phamtronghieu_client/models/ProductImage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/fit/iuh/edu/week02_lap_20062501_phamtronghieu_client/models/ProductPrice.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/fit/iuh/edu/week02_lap_20062501_phamtronghieu_client/repositories/CustomerRepositories.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/fit/iuh/edu/week02_lap_20062501_phamtronghieu_client/repositories/ProductRepositories.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/META-INF/beans.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/cart.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/cart.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/index.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/cart.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Week02_lap_20062501_PhamTrongHieu_Server/src/main/java/fit/iuh/edu/week02_lap_20062501_phamtronghieu_server/resources/ProductResource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Week02_lap_20062501_PhamTrongHieu_Server/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Week02_lap_20062501_PhamTrongHieu_Server/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Week02_lap_20062501_PhamTrongHieu_Server/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Week02_lap_20062501_PhamTrongHieu_Server/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Week02_lap_20062501_PhamTrongHieu_Server/src/main/java/fit/iuh/edu/week02_lap_20062501_phamtronghieu_server/services/ProductPriceService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Week02_lap_20062501_PhamTrongHieu_Server/src/main/java/fit/iuh/edu/week02_lap_20062501_phamtronghieu_server/services/ProductPriceService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,7 +31,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
@@ -218,7 +189,7 @@
       <updated>1695348885155</updated>
       <workItem from="1695348887429" duration="658000" />
       <workItem from="1695349570901" duration="2037000" />
-      <workItem from="1695360675249" duration="9664000" />
+      <workItem from="1695360675249" duration="12360000" />
     </task>
     <servers />
   </component>

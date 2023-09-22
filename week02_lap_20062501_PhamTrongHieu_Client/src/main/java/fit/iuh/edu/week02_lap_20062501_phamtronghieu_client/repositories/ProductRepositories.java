@@ -31,6 +31,10 @@ public class ProductRepositories {
 
                 // Lấy thông tin từ JSON và tạo đối tượng Product
                 Long product_id = obj.getLong("product_id");
+                
+
+
+
                 String name = obj.getString("name");
                 String description = obj.getString("description");
                 String unit = obj.getString("unit");

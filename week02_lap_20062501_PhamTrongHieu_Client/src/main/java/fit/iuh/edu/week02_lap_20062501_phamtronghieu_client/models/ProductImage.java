@@ -2,29 +2,24 @@ package fit.iuh.edu.week02_lap_20062501_phamtronghieu_client.models;
 
 import jakarta.persistence.*;
 
-@Entity
-@Table(name = "product_images")
+
 public class ProductImage {
 
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "image_id")
+
     private Long imageId;
 
 
-    @Id
-    @ManyToOne()
-    @JoinColumn(name="product_id")
+
     private Product product;
 
 
 
 
-    @Column(name = "path")
+
     private String path;
 
-    @Column(name = "alternative")
+
     private String alternative;
 
     // Constructors, getters, and setters
