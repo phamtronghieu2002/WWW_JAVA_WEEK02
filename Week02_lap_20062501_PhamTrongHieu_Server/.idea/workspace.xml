@@ -9,12 +9,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d6dac820-9e60-44d4-bfd7-51a745b1a59b" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../week02_lap_20062501_PhamTrongHieu_Client/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../week02_lap_20062501_PhamTrongHieu_Client/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../week02_lap_20062501_PhamTrongHieu_Client/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../week02_lap_20062501_PhamTrongHieu_Client/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../week02_lap_20062501_PhamTrongHieu_Client/src/main/java/fit/iuh/edu/week02_lap_20062501_phamtronghieu_client/models/ProductImage.java" beforeDir="false" afterPath="$PROJECT_DIR$/../week02_lap_20062501_PhamTrongHieu_Client/src/main/java/fit/iuh/edu/week02_lap_20062501_phamtronghieu_client/models/ProductImage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../week02_lap_20062501_PhamTrongHieu_Client/src/main/java/fit/iuh/edu/week02_lap_20062501_phamtronghieu_client/repositories/ProductRepositories.java" beforeDir="false" afterPath="$PROJECT_DIR$/../week02_lap_20062501_PhamTrongHieu_Client/src/main/java/fit/iuh/edu/week02_lap_20062501_phamtronghieu_client/repositories/ProductRepositories.java" afterDir="false" />
-    </list>
+    <list default="true" id="d6dac820-9e60-44d4-bfd7-51a745b1a59b" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -311,7 +306,7 @@
       <workItem from="1695260204723" duration="1543000" />
       <workItem from="1695271856148" duration="9872000" />
       <workItem from="1695302389144" duration="4159000" />
-      <workItem from="1695353914880" duration="7345000" />
+      <workItem from="1695353914880" duration="7436000" />
     </task>
     <servers />
   </component>
