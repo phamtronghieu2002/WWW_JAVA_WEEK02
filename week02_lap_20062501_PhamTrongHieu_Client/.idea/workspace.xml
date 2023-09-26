@@ -10,10 +10,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="955f08cc-9269-4aca-a71a-e55f09fa2a56" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../Week02_lap_20062501_PhamTrongHieu_Server/src/main/java/fit/iuh/edu/week02_lap_20062501_phamtronghieu_server/resources/ProductResource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Week02_lap_20062501_PhamTrongHieu_Server/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Week02_lap_20062501_PhamTrongHieu_Server/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Week02_lap_20062501_PhamTrongHieu_Server/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Week02_lap_20062501_PhamTrongHieu_Server/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Week02_lap_20062501_PhamTrongHieu_Server/src/main/java/fit/iuh/edu/week02_lap_20062501_phamtronghieu_server/services/ProductPriceService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Week02_lap_20062501_PhamTrongHieu_Server/src/main/java/fit/iuh/edu/week02_lap_20062501_phamtronghieu_server/services/ProductPriceService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Week02_lap_20062501_PhamTrongHieu_Server/src/main/java/fit/iuh/edu/week02_lap_20062501_phamtronghieu_server/models/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Week02_lap_20062501_PhamTrongHieu_Server/src/main/java/fit/iuh/edu/week02_lap_20062501_phamtronghieu_server/models/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Week02_lap_20062501_PhamTrongHieu_Server/src/main/java/fit/iuh/edu/week02_lap_20062501_phamtronghieu_server/models/ProductImage.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Week02_lap_20062501_PhamTrongHieu_Server/src/main/java/fit/iuh/edu/week02_lap_20062501_phamtronghieu_server/models/ProductImage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Week02_lap_20062501_PhamTrongHieu_Server/src/main/java/fit/iuh/edu/week02_lap_20062501_phamtronghieu_server/models/ProductPrice.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Week02_lap_20062501_PhamTrongHieu_Server/src/main/java/fit/iuh/edu/week02_lap_20062501_phamtronghieu_server/models/ProductPrice.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Week02_lap_20062501_PhamTrongHieu_Server/src/main/java/fit/iuh/edu/week02_lap_20062501_phamtronghieu_server/repositories/ProductRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Week02_lap_20062501_PhamTrongHieu_Server/src/main/java/fit/iuh/edu/week02_lap_20062501_phamtronghieu_server/repositories/ProductRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Week02_lap_20062501_PhamTrongHieu_Server/src/main/java/fit/iuh/edu/week02_lap_20062501_phamtronghieu_server/resources/ProductResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Week02_lap_20062501_PhamTrongHieu_Server/src/main/java/fit/iuh/edu/week02_lap_20062501_phamtronghieu_server/resources/ProductResource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Week02_lap_20062501_PhamTrongHieu_Server/src/main/java/fit/iuh/edu/week02_lap_20062501_phamtronghieu_server/services/ProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Week02_lap_20062501_PhamTrongHieu_Server/src/main/java/fit/iuh/edu/week02_lap_20062501_phamtronghieu_server/services/ProductService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Week02_lap_20062501_PhamTrongHieu_Server/src/main/resources/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Week02_lap_20062501_PhamTrongHieu_Server/src/main/resources/META-INF/persistence.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,10 +27,10 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Jsp File" />
         <option value="CSS File" />
         <option value="JavaScript File" />
         <option value="Class" />
+        <option value="Jsp File" />
       </list>
     </option>
   </component>
@@ -66,7 +70,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "master",
-    "last_opened_file_path": "C:/Users/PhamHieu/Downloads/WWW/Server/week02_lap_20062501_PhamTrongHieu_Client/src/main/java/fit/iuh/edu/week02_lap_20062501_phamtronghieu_client/models",
+    "last_opened_file_path": "C:/Users/PhamHieu/Downloads/WWW/Server/week02_lap_20062501_PhamTrongHieu_Client",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -190,6 +194,7 @@
       <workItem from="1695348887429" duration="658000" />
       <workItem from="1695349570901" duration="2037000" />
       <workItem from="1695360675249" duration="12360000" />
+      <workItem from="1695694309578" duration="2811000" />
     </task>
     <servers />
   </component>

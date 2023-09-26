@@ -21,11 +21,12 @@ public class ProductService {
         ProductDao.update(Product);
     }
 
-    public void deleteProduct(int ProductId) {
+    public boolean deleteProduct(Long ProductId) {
         Product Product = ProductDao.findById(ProductId);
         if (Product != null) {
-            ProductDao.delete(Product);
+         return   ProductDao.delete(Product);
         }
+        return false;
     }
 
     public Product getProductById(int ProductId) {
@@ -35,5 +36,11 @@ public class ProductService {
     public List<Product> getAllProducts() {
         return ProductDao.findAll();
     }
+
+    public List<Product> getAllProductsAndImages() {
+        return this.ProductDao.getProductsAndImages();
+    }
+
+
 
 }

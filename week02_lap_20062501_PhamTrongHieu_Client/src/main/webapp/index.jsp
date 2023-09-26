@@ -15,6 +15,12 @@
 <body>
  <div id="wrapper">
      <div class="container pt-3">
+
+         <div class="row mb-3">
+              <div class="col-md-12">
+                  <%@ include file="./WEB-INF/layouts/header.jsp" %>
+              </div>
+         </div>
          <div class="d-flex justify-content-end position-relative">
             <a class="d-block" href="CartController?action=acom">
                 <i class="fa-solid fa-cart-shopping"></i>

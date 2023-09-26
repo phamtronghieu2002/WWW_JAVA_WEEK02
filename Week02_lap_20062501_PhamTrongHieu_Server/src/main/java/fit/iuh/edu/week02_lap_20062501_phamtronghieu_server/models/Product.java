@@ -3,6 +3,7 @@ package fit.iuh.edu.week02_lap_20062501_phamtronghieu_server.models;
 import fit.iuh.edu.week02_lap_20062501_phamtronghieu_server.enums.ProductStatus;
 import jakarta.persistence.*;
 
+import java.util.List;
 
 
 @Entity
@@ -26,25 +27,59 @@ public class Product {
     @Column(name = "manufacturer_name")
     private String manufacturerName;
 
-    @Enumerated(EnumType.STRING)
+
     @Column(name = "status")
     private ProductStatus productStatus;
+
+    @OneToMany(mappedBy = "product", cascade = CascadeType.ALL,fetch = FetchType.EAGER)
+    private List<ProductImage> images;
+
+    @OneToMany(mappedBy = "product", cascade = CascadeType.ALL,fetch = FetchType.EAGER)
+    private List<ProductPrice> prices;
+
+
 
     // Constructors, getters, and setters
 
     public Product() {
     }
 
-    public Product(Long productId, String name, String description, String unit, String manufacturerName, ProductStatus productStatus) {
+    public Product(Long productId, String name, String description, String unit, String manufacturerName, ProductStatus productStatus, List<ProductImage> images, List<ProductPrice> prices) {
         this.productId = productId;
         this.name = name;
         this.description = description;
         this.unit = unit;
         this.manufacturerName = manufacturerName;
         this.productStatus = productStatus;
+        this.images = images;
+        this.prices = prices;
     }
 
-    // Getters and setters
+// Getters and setters
+
+    public ProductStatus getProductStatus() {
+        return productStatus;
+    }
+
+    public void setProductStatus(ProductStatus productStatus) {
+        this.productStatus = productStatus;
+    }
+
+    public List<ProductImage> getImages() {
+        return images;
+    }
+
+    public void setImages(List<ProductImage> images) {
+        this.images = images;
+    }
+
+    public List<ProductPrice> getPrices() {
+        return prices;
+    }
+
+    public void setPrices(List<ProductPrice> prices) {
+        this.prices = prices;
+    }
 
     public Long getProductId() {
         return productId;
