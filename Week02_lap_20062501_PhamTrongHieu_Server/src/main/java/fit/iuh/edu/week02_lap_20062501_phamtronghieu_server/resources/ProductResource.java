@@ -24,19 +24,13 @@ public class ProductResource {
     }
 
 
-//    @GET
-//    @Produces("application/json")
-//    public Response getAll() {
-//        List<Product> Products=cusService.getAllProducts();
-//        return Response.ok(Products).build();
-//    }
+
 
 
     @GET
     @Produces("application/json")
-
     public Response getAllAndImages() {
-        List<Product> Products=cusService.getAllProductsAndImages();
+        List<Product> Products=cusService.getAllProducts();
         return Response.ok(Products).build();
     }
 

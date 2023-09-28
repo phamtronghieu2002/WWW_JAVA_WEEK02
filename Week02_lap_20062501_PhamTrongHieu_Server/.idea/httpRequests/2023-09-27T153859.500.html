@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+<head><title>HTTP Status 500 – Internal Server Error</title>
+    <style type="text/css">body {
+        font-family: Tahoma, Arial, sans-serif;
+    }
+
+    h1, h2, h3, b {
+        color: white;
+        background-color: #525D76;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+
+    h2 {
+        font-size: 16px;
+    }
+
+    h3 {
+        font-size: 14px;
+    }
+
+    p {
+        font-size: 12px;
+    }
+
+    a {
+        color: black;
+    }
+
+    .line {
+        height: 1px;
+        background-color: #525D76;
+        border: none;
+    }</style>
+</head>
+<body><h1>HTTP Status 500 – Internal Server Error</h1>
+<hr class="line"/>
+<p><b>Type</b> Exception Report</p>
+<p><b>Message</b> Request failed.</p>
+<p><b>Description</b> The server encountered an unexpected condition that prevented it from fulfilling the request.</p>
+<p><b>Exception</b></p>
+<pre>jakarta.servlet.ServletException: org.glassfish.jersey.server.ContainerException: java.lang.NoClassDefFoundError: com&#47;fasterxml&#47;jackson&#47;module&#47;jaxb&#47;JaxbAnnotationIntrospector
+	org.glassfish.jersey.servlet.WebComponent.serviceImpl(WebComponent.java:409)
+	org.glassfish.jersey.servlet.WebComponent.service(WebComponent.java:346)
+	org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:357)
+	org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:311)
+	org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:205)
+	org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+</pre>
+<p><b>Root Cause</b></p>
+<pre>org.glassfish.jersey.server.ContainerException: java.lang.NoClassDefFoundError: com&#47;fasterxml&#47;jackson&#47;module&#47;jaxb&#47;JaxbAnnotationIntrospector
+	org.glassfish.jersey.servlet.internal.ResponseWriter.rethrow(ResponseWriter.java:255)
+	org.glassfish.jersey.servlet.internal.ResponseWriter.failure(ResponseWriter.java:237)
+	org.glassfish.jersey.server.ServerRuntime$Responder.process(ServerRuntime.java:456)
+	org.glassfish.jersey.server.ServerRuntime$1.run(ServerRuntime.java:269)
+	org.glassfish.jersey.internal.Errors$1.call(Errors.java:248)
+	org.glassfish.jersey.internal.Errors$1.call(Errors.java:244)
+	org.glassfish.jersey.internal.Errors.process(Errors.java:292)
+	org.glassfish.jersey.internal.Errors.process(Errors.java:274)
+	org.glassfish.jersey.internal.Errors.process(Errors.java:244)
+	org.glassfish.jersey.process.internal.RequestScope.runInScope(RequestScope.java:265)
+	org.glassfish.jersey.server.ServerRuntime.process(ServerRuntime.java:240)
+	org.glassfish.jersey.server.ApplicationHandler.handle(ApplicationHandler.java:697)
+	org.glassfish.jersey.servlet.WebComponent.serviceImpl(WebComponent.java:394)
+	org.glassfish.jersey.servlet.WebComponent.service(WebComponent.java:346)
+	org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:357)
+	org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:311)
+	org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:205)
+	org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+</pre>
+<p><b>Root Cause</b></p>
+<pre>java.lang.NoClassDefFoundError: com&#47;fasterxml&#47;jackson&#47;module&#47;jaxb&#47;JaxbAnnotationIntrospector
+	org.glassfish.jersey.jackson.internal.jackson.jaxrs.json.JsonMapperConfigurator._resolveIntrospector(JsonMapperConfigurator.java:111)
+	org.glassfish.jersey.jackson.internal.jackson.jaxrs.json.JsonMapperConfigurator._resolveIntrospectors(JsonMapperConfigurator.java:86)
+	org.glassfish.jersey.jackson.internal.jackson.jaxrs.cfg.MapperConfiguratorBase._setAnnotations(MapperConfiguratorBase.java:123)
+	org.glassfish.jersey.jackson.internal.jackson.jaxrs.json.JsonMapperConfigurator.getDefaultMapper(JsonMapperConfigurator.java:47)
+	org.glassfish.jersey.jackson.internal.jackson.jaxrs.base.ProviderBase.locateMapper(ProviderBase.java:948)
+	org.glassfish.jersey.jackson.internal.jackson.jaxrs.base.ProviderBase._endpointForWriting(ProviderBase.java:713)
+	org.glassfish.jersey.jackson.internal.jackson.jaxrs.base.ProviderBase.writeTo(ProviderBase.java:585)
+	org.glassfish.jersey.message.internal.WriterInterceptorExecutor$TerminalWriterInterceptor.invokeWriteTo(WriterInterceptorExecutor.java:242)
+	org.glassfish.jersey.message.internal.WriterInterceptorExecutor$TerminalWriterInterceptor.aroundWriteTo(WriterInterceptorExecutor.java:227)
+	org.glassfish.jersey.message.internal.WriterInterceptorExecutor.proceed(WriterInterceptorExecutor.java:139)
+	org.glassfish.jersey.server.internal.JsonWithPaddingInterceptor.aroundWriteTo(JsonWithPaddingInterceptor.java:85)
+	org.glassfish.jersey.message.internal.WriterInterceptorExecutor.proceed(WriterInterceptorExecutor.java:139)
+	org.glassfish.jersey.server.internal.MappableExceptionWrapperInterceptor.aroundWriteTo(MappableExceptionWrapperInterceptor.java:61)
+	org.glassfish.jersey.message.internal.WriterInterceptorExecutor.proceed(WriterInterceptorExecutor.java:139)
+	org.glassfish.jersey.message.internal.MessageBodyFactory.writeTo(MessageBodyFactory.java:1116)
+	org.glassfish.jersey.server.ServerRuntime$Responder.writeResponse(ServerRuntime.java:677)
+	org.glassfish.jersey.server.ServerRuntime$Responder.processResponse(ServerRuntime.java:385)
+	org.glassfish.jersey.server.ServerRuntime$Responder.process(ServerRuntime.java:375)
+	org.glassfish.jersey.server.ServerRuntime$1.run(ServerRuntime.java:264)
+	org.glassfish.jersey.internal.Errors$1.call(Errors.java:248)
+	org.glassfish.jersey.internal.Errors$1.call(Errors.java:244)
+	org.glassfish.jersey.internal.Errors.process(Errors.java:292)
+	org.glassfish.jersey.internal.Errors.process(Errors.java:274)
+	org.glassfish.jersey.internal.Errors.process(Errors.java:244)
+	org.glassfish.jersey.process.internal.RequestScope.runInScope(RequestScope.java:265)
+	org.glassfish.jersey.server.ServerRuntime.process(ServerRuntime.java:240)
+	org.glassfish.jersey.server.ApplicationHandler.handle(ApplicationHandler.java:697)
+	org.glassfish.jersey.servlet.WebComponent.serviceImpl(WebComponent.java:394)
+	org.glassfish.jersey.servlet.WebComponent.service(WebComponent.java:346)
+	org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:357)
+	org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:311)
+	org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:205)
+	org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+</pre>
+<p><b>Root Cause</b></p>
+<pre>java.lang.ClassNotFoundException: com.fasterxml.jackson.module.jaxb.JaxbAnnotationIntrospector
+	org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1437)
+	org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1245)
+	org.glassfish.jersey.jackson.internal.jackson.jaxrs.json.JsonMapperConfigurator._resolveIntrospector(JsonMapperConfigurator.java:111)
+	org.glassfish.jersey.jackson.internal.jackson.jaxrs.json.JsonMapperConfigurator._resolveIntrospectors(JsonMapperConfigurator.java:86)
+	org.glassfish.jersey.jackson.internal.jackson.jaxrs.cfg.MapperConfiguratorBase._setAnnotations(MapperConfiguratorBase.java:123)
+	org.glassfish.jersey.jackson.internal.jackson.jaxrs.json.JsonMapperConfigurator.getDefaultMapper(JsonMapperConfigurator.java:47)
+	org.glassfish.jersey.jackson.internal.jackson.jaxrs.base.ProviderBase.locateMapper(ProviderBase.java:948)
+	org.glassfish.jersey.jackson.internal.jackson.jaxrs.base.ProviderBase._endpointForWriting(ProviderBase.java:713)
+	org.glassfish.jersey.jackson.internal.jackson.jaxrs.base.ProviderBase.writeTo(ProviderBase.java:585)
+	org.glassfish.jersey.message.internal.WriterInterceptorExecutor$TerminalWriterInterceptor.invokeWriteTo(WriterInterceptorExecutor.java:242)
+	org.glassfish.jersey.message.internal.WriterInterceptorExecutor$TerminalWriterInterceptor.aroundWriteTo(WriterInterceptorExecutor.java:227)
+	org.glassfish.jersey.message.internal.WriterInterceptorExecutor.proceed(WriterInterceptorExecutor.java:139)
+	org.glassfish.jersey.server.internal.JsonWithPaddingInterceptor.aroundWriteTo(JsonWithPaddingInterceptor.java:85)
+	org.glassfish.jersey.message.internal.WriterInterceptorExecutor.proceed(WriterInterceptorExecutor.java:139)
+	org.glassfish.jersey.server.internal.MappableExceptionWrapperInterceptor.aroundWriteTo(MappableExceptionWrapperInterceptor.java:61)
+	org.glassfish.jersey.message.internal.WriterInterceptorExecutor.proceed(WriterInterceptorExecutor.java:139)
+	org.glassfish.jersey.message.internal.MessageBodyFactory.writeTo(MessageBodyFactory.java:1116)
+	org.glassfish.jersey.server.ServerRuntime$Responder.writeResponse(ServerRuntime.java:677)
+	org.glassfish.jersey.server.ServerRuntime$Responder.processResponse(ServerRuntime.java:385)
+	org.glassfish.jersey.server.ServerRuntime$Responder.process(ServerRuntime.java:375)
+	org.glassfish.jersey.server.ServerRuntime$1.run(ServerRuntime.java:264)
+	org.glassfish.jersey.internal.Errors$1.call(Errors.java:248)
+	org.glassfish.jersey.internal.Errors$1.call(Errors.java:244)
+	org.glassfish.jersey.internal.Errors.process(Errors.java:292)
+	org.glassfish.jersey.internal.Errors.process(Errors.java:274)
+	org.glassfish.jersey.internal.Errors.process(Errors.java:244)
+	org.glassfish.jersey.process.internal.RequestScope.runInScope(RequestScope.java:265)
+	org.glassfish.jersey.server.ServerRuntime.process(ServerRuntime.java:240)
+	org.glassfish.jersey.server.ApplicationHandler.handle(ApplicationHandler.java:697)
+	org.glassfish.jersey.servlet.WebComponent.serviceImpl(WebComponent.java:394)
+	org.glassfish.jersey.servlet.WebComponent.service(WebComponent.java:346)
+	org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:357)
+	org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:311)
+	org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:205)
+	org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+</pre>
+<p><b>Note</b> The full stack trace of the root cause is available in the server logs.</p>
+<hr class="line"/>
+<h3>Apache Tomcat/10.1.13</h3></body>
+</html>

@@ -1,5 +1,6 @@
 package fit.iuh.edu.week02_lap_20062501_phamtronghieu_server.services;
 
+import fit.iuh.edu.week02_lap_20062501_phamtronghieu_server.enums.EmployeeStatus;
 import fit.iuh.edu.week02_lap_20062501_phamtronghieu_server.models.Employee;
 import fit.iuh.edu.week02_lap_20062501_phamtronghieu_server.repositories.EmployeeRepository;
 
@@ -21,12 +22,14 @@ public class EmployeeService {
         EmployeeDao.update(Employee);
     }
 
-    public void deleteEmployee(int EmployeeId) {
-        Employee Employee = EmployeeDao.findById(EmployeeId);
-        if (Employee != null) {
-            EmployeeDao.delete(Employee);
-        }
-    }
+//    public boolean deleteEmployee(int EmployeeId) {
+//        Employee Employee = EmployeeDao.findById(EmployeeId);
+//        if (Employee != null) {
+//           return EmployeeDao.delete(Employee);
+//        }
+//
+//        return false;
+//    }
 
     public Employee getEmployeeById(int EmployeeId) {
         return EmployeeDao.findById(EmployeeId);
@@ -36,4 +39,9 @@ public class EmployeeService {
         return EmployeeDao.findAll();
     }
 
+     public boolean DeleteEm(int id)
+     {
+         return  EmployeeDao.updateStatus(id, EmployeeStatus.NOT_ACTIVE);
+
+     }
 }

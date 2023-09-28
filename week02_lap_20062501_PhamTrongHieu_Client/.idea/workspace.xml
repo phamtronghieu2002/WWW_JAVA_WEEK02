@@ -10,12 +10,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="955f08cc-9269-4aca-a71a-e55f09fa2a56" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../Week02_lap_20062501_PhamTrongHieu_Server/.idea/httpRequests/2023-09-28T094408.404.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Week02_lap_20062501_PhamTrongHieu_Server/.idea/httpRequests/2023-09-28T094500.404.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Week02_lap_20062501_PhamTrongHieu_Server/src/main/java/fit/iuh/edu/week02_lap_20062501_phamtronghieu_server/converters/EmployeeStatusConverter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Week02_lap_20062501_PhamTrongHieu_Server/src/main/java/fit/iuh/edu/week02_lap_20062501_phamtronghieu_server/resources/EmployeeResource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Week02_lap_20062501_PhamTrongHieu_Server/.idea/httpRequests/http-requests-log.http" beforeDir="false" afterPath="$PROJECT_DIR$/../Week02_lap_20062501_PhamTrongHieu_Server/.idea/httpRequests/http-requests-log.http" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Week02_lap_20062501_PhamTrongHieu_Server/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Week02_lap_20062501_PhamTrongHieu_Server/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Week02_lap_20062501_PhamTrongHieu_Server/src/main/java/fit/iuh/edu/week02_lap_20062501_phamtronghieu_server/models/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Week02_lap_20062501_PhamTrongHieu_Server/src/main/java/fit/iuh/edu/week02_lap_20062501_phamtronghieu_server/models/Employee.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Week02_lap_20062501_PhamTrongHieu_Server/src/main/java/fit/iuh/edu/week02_lap_20062501_phamtronghieu_server/models/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Week02_lap_20062501_PhamTrongHieu_Server/src/main/java/fit/iuh/edu/week02_lap_20062501_phamtronghieu_server/models/Product.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Week02_lap_20062501_PhamTrongHieu_Server/src/main/java/fit/iuh/edu/week02_lap_20062501_phamtronghieu_server/models/ProductImage.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Week02_lap_20062501_PhamTrongHieu_Server/src/main/java/fit/iuh/edu/week02_lap_20062501_phamtronghieu_server/models/ProductImage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Week02_lap_20062501_PhamTrongHieu_Server/src/main/java/fit/iuh/edu/week02_lap_20062501_phamtronghieu_server/models/ProductPrice.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Week02_lap_20062501_PhamTrongHieu_Server/src/main/java/fit/iuh/edu/week02_lap_20062501_phamtronghieu_server/models/ProductPrice.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Week02_lap_20062501_PhamTrongHieu_Server/src/main/java/fit/iuh/edu/week02_lap_20062501_phamtronghieu_server/repositories/EmployeeRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Week02_lap_20062501_PhamTrongHieu_Server/src/main/java/fit/iuh/edu/week02_lap_20062501_phamtronghieu_server/repositories/EmployeeRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Week02_lap_20062501_PhamTrongHieu_Server/src/main/java/fit/iuh/edu/week02_lap_20062501_phamtronghieu_server/repositories/ProductRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Week02_lap_20062501_PhamTrongHieu_Server/src/main/java/fit/iuh/edu/week02_lap_20062501_phamtronghieu_server/repositories/ProductRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Week02_lap_20062501_PhamTrongHieu_Server/src/main/java/fit/iuh/edu/week02_lap_20062501_phamtronghieu_server/resources/ProductResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Week02_lap_20062501_PhamTrongHieu_Server/src/main/java/fit/iuh/edu/week02_lap_20062501_phamtronghieu_server/resources/ProductResource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Week02_lap_20062501_PhamTrongHieu_Server/src/main/java/fit/iuh/edu/week02_lap_20062501_phamtronghieu_server/services/EmployeeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Week02_lap_20062501_PhamTrongHieu_Server/src/main/java/fit/iuh/edu/week02_lap_20062501_phamtronghieu_server/services/EmployeeService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Week02_lap_20062501_PhamTrongHieu_Server/src/main/java/fit/iuh/edu/week02_lap_20062501_phamtronghieu_server/services/ProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Week02_lap_20062501_PhamTrongHieu_Server/src/main/java/fit/iuh/edu/week02_lap_20062501_phamtronghieu_server/services/ProductService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Week02_lap_20062501_PhamTrongHieu_Server/src/main/resources/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Week02_lap_20062501_PhamTrongHieu_Server/src/main/resources/META-INF/persistence.xml" afterDir="false" />
     </list>
@@ -85,6 +93,7 @@
       <recent name="C:\Users\PhamHieu\Downloads\WWW\Server\week02_lap_20062501_PhamTrongHieu_Client\src\main\java\fit\iuh\edu\week02_lap_20062501_phamtronghieu_client" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\PhamHieu\Downloads\WWW\Server\week02_lap_20062501_PhamTrongHieu_Client\src\main\webapp\WEB-INF\pages" />
       <recent name="C:\Users\PhamHieu\Downloads\WWW\Server\week02_lap_20062501_PhamTrongHieu_Client\src\main\webapp\WEB-INF" />
       <recent name="C:\Users\PhamHieu\Downloads\WWW\Server\week02_lap_20062501_PhamTrongHieu_Client\src\main\webapp\css" />
     </key>
@@ -94,6 +103,7 @@
       <option name="OPEN_IN_BROWSER_URL" value="http://localhost:9090/week02/client" />
       <option name="UPDATE_ON_FRAME_DEACTIVATION" value="true" />
       <option name="UPDATE_CLASSES_ON_FRAME_DEACTIVATION" value="true" />
+      <option name="UPDATING_POLICY" value="redeploy-artifacts" />
       <deployment>
         <artifact name="week02_lap_20062501_PhamTrongHieu_Client:war exploded">
           <settings>
@@ -195,6 +205,9 @@
       <workItem from="1695349570901" duration="2037000" />
       <workItem from="1695360675249" duration="12360000" />
       <workItem from="1695694309578" duration="2811000" />
+      <workItem from="1695800348465" duration="1347000" />
+      <workItem from="1695818897099" duration="14009000" />
+      <workItem from="1695863905276" duration="16053000" />
     </task>
     <servers />
   </component>

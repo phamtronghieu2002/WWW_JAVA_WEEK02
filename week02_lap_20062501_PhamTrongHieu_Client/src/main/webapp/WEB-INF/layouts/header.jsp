@@ -1,10 +1,5 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<html>
-<head>
-    <title>Title</title>
-</head>
-<body>
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container-fluid">
         <a class="navbar-brand" href="#">Navbar</a>
@@ -14,20 +9,17 @@
         <div class="collapse navbar-collapse" id="navbarText">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="client/">Home</a>
+                    <a class="nav-link <%= (request.getAttribute("menuActive") != null && request.getAttribute("menuActive").equals("home")) ? "active" : "" %>" aria-current="page" href="index.jsp">Home</a>
+                </li>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Features</a>
+                    <a class="nav-link <%= (request.getAttribute("menuActive") != null && request.getAttribute("menuActive").equals("managerEmployee")) ? "active" : ""%>" href="EmployeeController">Quản lí nhân viên</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Pricing</a>
+                    <a class="nav-link <%= (request.getAttribute("menuActive") != null && request.getAttribute("menuActive").equals("managerProduct")) ? "active" : ""%>" href="ProductController">Quản lí sản phẩm</a>
                 </li>
             </ul>
-            <span class="navbar-text">
-        Navbar text with an inline element
-      </span>
+
         </div>
     </div>
 </nav>
-</body>
-</html>

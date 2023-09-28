@@ -1,4 +1,4 @@
-package fit.iuh.edu.week02_lap_20062501_phamtronghieu_client.models;
+package fit.iuh.edu.week02_lap_20062501_phamtronghieu_client.entities;
 
 import jakarta.persistence.*;
 

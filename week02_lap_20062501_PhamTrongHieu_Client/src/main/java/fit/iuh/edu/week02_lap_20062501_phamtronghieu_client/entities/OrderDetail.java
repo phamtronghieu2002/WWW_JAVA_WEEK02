@@ -1,7 +1,4 @@
-package fit.iuh.edu.week02_lap_20062501_phamtronghieu_client.models;
-import jakarta.persistence.*;
-
-
+package fit.iuh.edu.week02_lap_20062501_phamtronghieu_client.entities;
 
 
 public class OrderDetail {

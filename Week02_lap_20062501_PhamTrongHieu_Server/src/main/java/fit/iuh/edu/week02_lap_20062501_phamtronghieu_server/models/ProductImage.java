@@ -1,5 +1,7 @@
 package fit.iuh.edu.week02_lap_20062501_phamtronghieu_server.models;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 import jakarta.persistence.*;
 
 @Entity
@@ -13,9 +15,12 @@ public class ProductImage {
     private Long imageId;
 
 
+
+
     @Id
     @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name="product_id")
+    @JsonManagedReference
     private Product product;
 
 

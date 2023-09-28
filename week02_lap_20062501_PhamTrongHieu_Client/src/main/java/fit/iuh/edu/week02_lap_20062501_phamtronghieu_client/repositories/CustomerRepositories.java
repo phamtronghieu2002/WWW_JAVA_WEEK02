@@ -1,6 +1,6 @@
 package fit.iuh.edu.week02_lap_20062501_phamtronghieu_client.repositories;
 
-import fit.iuh.edu.week02_lap_20062501_phamtronghieu_client.models.Customer;
+import fit.iuh.edu.week02_lap_20062501_phamtronghieu_client.entities.Customer;
 
 
 import org.apache.http.HttpResponse;

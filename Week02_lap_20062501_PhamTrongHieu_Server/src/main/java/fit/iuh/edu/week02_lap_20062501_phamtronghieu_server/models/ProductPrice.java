@@ -1,5 +1,6 @@
 package fit.iuh.edu.week02_lap_20062501_phamtronghieu_server.models;
 
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 import jakarta.persistence.*;
 
 import java.sql.Date;
@@ -13,7 +14,11 @@ public class ProductPrice {
     @Id
     @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "product_id")
+    @JsonManagedReference
     private Product product;
+    
+
+
 
     @Id
     @Column(name = "price_date_time")

@@ -1,3 +1,39 @@
+DELETE http://localhost:8080/api/employees/6
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-09-28T094500.404.html
+
+###
+
+DELETE http://localhost:8080/api/employees/6
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-09-28T094408.404.html
+
+###
+
+GET http://localhost:8080/week02/api/products
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-09-27T154448.200.json
+
+###
+
+GET http://localhost:8080/week02/api/products
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-09-27T153859.500.html
+
+###
+
 GET http://localhost:8080/Week02_lap_20062501_PhamTrongHieu_Server_war/api/hello-world
 Connection: Keep-Alive
 User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)

@@ -1,9 +1,6 @@
-package fit.iuh.edu.week02_lap_20062501_phamtronghieu_client.models;
+package fit.iuh.edu.week02_lap_20062501_phamtronghieu_client.entities;
 
 import fit.iuh.edu.week02_lap_20062501_phamtronghieu_client.enums.ProductStatus;
-import jakarta.persistence.*;
-
-
 
 
 public class Product {
@@ -39,11 +36,26 @@ public class Product {
         this.manufacturerName = manufacturerName;
         this.productStatus = productStatus;
     }
+    public Product( String name, String description, String unit, String manufacturerName, ProductStatus productStatus) {
 
+        this.name = name;
+        this.description = description;
+        this.unit = unit;
+        this.manufacturerName = manufacturerName;
+        this.productStatus = productStatus;
+    }
     // Getters and setters
 
     public Long getProductId() {
         return productId;
+    }
+
+    public ProductStatus getProductStatus() {
+        return productStatus;
+    }
+
+    public void setProductStatus(ProductStatus productStatus) {
+        this.productStatus = productStatus;
     }
 
     public void setProductId(Long productId) {

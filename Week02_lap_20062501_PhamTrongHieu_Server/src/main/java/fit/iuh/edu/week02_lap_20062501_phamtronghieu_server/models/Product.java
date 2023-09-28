@@ -1,5 +1,6 @@
 package fit.iuh.edu.week02_lap_20062501_phamtronghieu_server.models;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import fit.iuh.edu.week02_lap_20062501_phamtronghieu_server.enums.ProductStatus;
 import jakarta.persistence.*;
 
@@ -30,10 +31,10 @@ public class Product {
 
     @Column(name = "status")
     private ProductStatus productStatus;
-
+    @JsonIgnore
     @OneToMany(mappedBy = "product", cascade = CascadeType.ALL,fetch = FetchType.EAGER)
     private List<ProductImage> images;
-
+    @JsonIgnore
     @OneToMany(mappedBy = "product", cascade = CascadeType.ALL,fetch = FetchType.EAGER)
     private List<ProductPrice> prices;
 
@@ -131,7 +132,15 @@ public class Product {
 
     @Override
     public String toString() {
-        return "Product [productId=" + productId + ", name=" + name + ", description=" + description + ", unit=" + unit
-                + ", manufacturerName=" + manufacturerName + ", status=" + productStatus + "]";
+        return "Product{" +
+                "productId=" + productId +
+                ", name='" + name + '\'' +
+                ", description='" + description + '\'' +
+                ", unit='" + unit + '\'' +
+                ", manufacturerName='" + manufacturerName + '\'' +
+                ", productStatus=" + productStatus +
+                ", images=" + images +
+                ", prices=" + prices +
+                '}';
     }
 }

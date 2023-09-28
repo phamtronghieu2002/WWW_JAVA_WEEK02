@@ -1,4 +1,4 @@
-<%@ page contentType="text/html; charset=UTF-8" %>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <!doctype html>
 <html lang="en">
 <head>
@@ -18,7 +18,9 @@
 
          <div class="row mb-3">
               <div class="col-md-12">
+                  <% request.setAttribute("menuActive", "home"); %>
                   <%@ include file="./WEB-INF/layouts/header.jsp" %>
+
               </div>
          </div>
          <div class="d-flex justify-content-end position-relative">

@@ -11,6 +11,18 @@
   <component name="ChangeListManager">
     <list default="true" id="d6dac820-9e60-44d4-bfd7-51a745b1a59b" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/../week02_lap_20062501_PhamTrongHieu_Client/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../week02_lap_20062501_PhamTrongHieu_Client/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../week02_lap_20062501_PhamTrongHieu_Client/src/main/java/fit/iuh/edu/week02_lap_20062501_phamtronghieu_client/controllers/CartController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../week02_lap_20062501_PhamTrongHieu_Client/src/main/java/fit/iuh/edu/week02_lap_20062501_phamtronghieu_client/controllers/CartController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../week02_lap_20062501_PhamTrongHieu_Client/src/main/java/fit/iuh/edu/week02_lap_20062501_phamtronghieu_client/models/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../week02_lap_20062501_PhamTrongHieu_Client/src/main/java/fit/iuh/edu/week02_lap_20062501_phamtronghieu_client/entities/Customer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../week02_lap_20062501_PhamTrongHieu_Client/src/main/java/fit/iuh/edu/week02_lap_20062501_phamtronghieu_client/models/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/../week02_lap_20062501_PhamTrongHieu_Client/src/main/java/fit/iuh/edu/week02_lap_20062501_phamtronghieu_client/entities/Employee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../week02_lap_20062501_PhamTrongHieu_Client/src/main/java/fit/iuh/edu/week02_lap_20062501_phamtronghieu_client/models/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/../week02_lap_20062501_PhamTrongHieu_Client/src/main/java/fit/iuh/edu/week02_lap_20062501_phamtronghieu_client/entities/Order.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../week02_lap_20062501_PhamTrongHieu_Client/src/main/java/fit/iuh/edu/week02_lap_20062501_phamtronghieu_client/models/OrderDetail.java" beforeDir="false" afterPath="$PROJECT_DIR$/../week02_lap_20062501_PhamTrongHieu_Client/src/main/java/fit/iuh/edu/week02_lap_20062501_phamtronghieu_client/entities/OrderDetail.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../week02_lap_20062501_PhamTrongHieu_Client/src/main/java/fit/iuh/edu/week02_lap_20062501_phamtronghieu_client/models/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/../week02_lap_20062501_PhamTrongHieu_Client/src/main/java/fit/iuh/edu/week02_lap_20062501_phamtronghieu_client/entities/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../week02_lap_20062501_PhamTrongHieu_Client/src/main/java/fit/iuh/edu/week02_lap_20062501_phamtronghieu_client/models/ProductImage.java" beforeDir="false" afterPath="$PROJECT_DIR$/../week02_lap_20062501_PhamTrongHieu_Client/src/main/java/fit/iuh/edu/week02_lap_20062501_phamtronghieu_client/entities/ProductImage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../week02_lap_20062501_PhamTrongHieu_Client/src/main/java/fit/iuh/edu/week02_lap_20062501_phamtronghieu_client/models/ProductPrice.java" beforeDir="false" afterPath="$PROJECT_DIR$/../week02_lap_20062501_PhamTrongHieu_Client/src/main/java/fit/iuh/edu/week02_lap_20062501_phamtronghieu_client/entities/ProductPrice.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../week02_lap_20062501_PhamTrongHieu_Client/src/main/java/fit/iuh/edu/week02_lap_20062501_phamtronghieu_client/repositories/CustomerRepositories.java" beforeDir="false" afterPath="$PROJECT_DIR$/../week02_lap_20062501_PhamTrongHieu_Client/src/main/java/fit/iuh/edu/week02_lap_20062501_phamtronghieu_client/repositories/CustomerRepositories.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../week02_lap_20062501_PhamTrongHieu_Client/src/main/java/fit/iuh/edu/week02_lap_20062501_phamtronghieu_client/repositories/ProductRepositories.java" beforeDir="false" afterPath="$PROJECT_DIR$/../week02_lap_20062501_PhamTrongHieu_Client/src/main/java/fit/iuh/edu/week02_lap_20062501_phamtronghieu_client/repositories/ProductRepositories.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../week02_lap_20062501_PhamTrongHieu_Client/src/main/webapp/WEB-INF/cart.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../week02_lap_20062501_PhamTrongHieu_Client/src/main/webapp/WEB-INF/pages/cart.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../week02_lap_20062501_PhamTrongHieu_Client/src/main/webapp/WEB-INF/layouts/header.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../week02_lap_20062501_PhamTrongHieu_Client/src/main/webapp/WEB-INF/layouts/header.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../week02_lap_20062501_PhamTrongHieu_Client/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../week02_lap_20062501_PhamTrongHieu_Client/src/main/webapp/index.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -53,24 +65,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/PhamHieu/Downloads/WWW/Server/week02_lap_20062501_PhamTrongHieu_Client&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Artifacts&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.08123477&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "C:/Users/PhamHieu/Downloads/WWW/Server/week02_lap_20062501_PhamTrongHieu_Client",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "project.structure.last.edited": "Artifacts",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.08123477",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\PhamHieu\Downloads\WWW\Server\Week02_lap_20062501_PhamTrongHieu_Server\src\main\java\fit\iuh\edu\week02_lap_20062501_phamtronghieu_server" />
@@ -289,11 +301,11 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.RunJPA" />
-        <item itemvalue="Application.Test_Repositories" />
         <item itemvalue="HTTP Request.generated-requests | #7" />
-        <item itemvalue="HTTP Request.generated-requests | #6" />
+        <item itemvalue="Application.RunJPA" />
         <item itemvalue="HTTP Request.generated-requests | #5" />
+        <item itemvalue="Application.Test_Repositories" />
+        <item itemvalue="HTTP Request.generated-requests | #6" />
       </list>
     </recent_temporary>
   </component>
@@ -314,6 +326,10 @@
       <workItem from="1695651083046" duration="7226000" />
       <workItem from="1695658955428" duration="3429000" />
       <workItem from="1695693142559" duration="5002000" />
+      <workItem from="1695800529860" duration="9640000" />
+      <workItem from="1695818730836" duration="55000" />
+      <workItem from="1695818887385" duration="8094000" />
+      <workItem from="1695863801354" duration="12508000" />
     </task>
     <servers />
   </component>

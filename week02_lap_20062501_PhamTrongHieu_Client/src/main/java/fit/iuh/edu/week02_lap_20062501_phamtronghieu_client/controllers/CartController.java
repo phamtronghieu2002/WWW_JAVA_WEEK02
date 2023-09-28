@@ -24,6 +24,6 @@ public class CartController extends HttpServlet {
         CustomerRepositories.getCustomer();
 
 
-        req.getRequestDispatcher("WEB-INF/cart.jsp").forward(req, resp);
+        req.getRequestDispatcher("WEB-INF/pages/cart.jsp").forward(req, resp);
     }
 }

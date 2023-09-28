@@ -1,7 +1,6 @@
-package fit.iuh.edu.week02_lap_20062501_phamtronghieu_client.models;
+package fit.iuh.edu.week02_lap_20062501_phamtronghieu_client.entities;
 
 import fit.iuh.edu.week02_lap_20062501_phamtronghieu_client.enums.EmployeeStatus;
-import jakarta.persistence.*;
 
 import java.util.Date;
 
@@ -45,6 +44,15 @@ public class Employee {
         this.status = status;
     }
 
+    public Employee(String fullName, String email, String phone, String address, Date dob,EmployeeStatus status) {
+
+        this.fullName = fullName;
+        this.dob = dob;
+        this.email = email;
+        this.phone = phone;
+        this.address = address;
+        this.status = status;
+    }
 
 // Getter and setter methods for all fields
 

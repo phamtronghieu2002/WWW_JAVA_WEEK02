@@ -1,5 +1,6 @@
 package fit.iuh.edu.week02_lap_20062501_phamtronghieu_server.services;
 
+import fit.iuh.edu.week02_lap_20062501_phamtronghieu_server.enums.ProductStatus;
 import fit.iuh.edu.week02_lap_20062501_phamtronghieu_server.models.Product;
 import fit.iuh.edu.week02_lap_20062501_phamtronghieu_server.repositories.ProductRepository;
 
@@ -21,12 +22,8 @@ public class ProductService {
         ProductDao.update(Product);
     }
 
-    public boolean deleteProduct(Long ProductId) {
-        Product Product = ProductDao.findById(ProductId);
-        if (Product != null) {
-         return   ProductDao.delete(Product);
-        }
-        return false;
+    public boolean deleteProduct(long ProductId) {
+      return ProductDao.updateStatus(ProductId, ProductStatus.NOT_ACTIVE);
     }
 
     public Product getProductById(int ProductId) {
@@ -37,8 +34,8 @@ public class ProductService {
         return ProductDao.findAll();
     }
 
-    public List<Product> getAllProductsAndImages() {
-        return this.ProductDao.getProductsAndImages();
+    public List<Product> getAllProduct() {
+        return this.ProductDao.getProducts();
     }
 
 

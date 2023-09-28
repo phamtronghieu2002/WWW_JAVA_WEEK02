@@ -30,7 +30,7 @@ public class Employee {
     @Column(name = "address")
     private String address;
 
-    @Enumerated(EnumType.STRING)
+
     @Column(name = "status")
 
     private EmployeeStatus status;
