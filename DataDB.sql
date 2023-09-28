@@ -1,12 +1,12 @@
 -- Bảng employees
 INSERT INTO employees (emp_id, address, dob, email, full_name, phone, status)
-VALUES (3, '789 Willow Lane', '1988-06-20', 'employee3@email.com', 'Sarah Johnson', '555-555-5555', 'Active');
+VALUES (3, '789 Willow Lane', '1988-06-20', 'employee3@email.com', 'Sarah Johnson', '555-555-5555', '1');
 
 INSERT INTO employees (emp_id, address, dob, email, full_name, phone, status)
-VALUES (4, '101 Birch Street', '1995-09-10', 'employee4@email.com', 'Michael Brown', '555-111-2222', 'Active');
+VALUES (4, '101 Birch Street', '1995-09-10', 'employee4@email.com', 'Michael Brown', '555-111-2222', '1');
 
 INSERT INTO employees (emp_id, address, dob, email, full_name, phone, status)
-VALUES (5, '202 Maple Avenue', '1983-04-05', 'employee5@email.com', 'Emily Davis', '555-333-4444', 'Active');
+VALUES (5, '202 Maple Avenue', '1983-04-05', 'employee5@email.com', 'Emily Davis', '555-333-4444', '1');
 
 -- Bảng Customer
 INSERT INTO customers (cust_id, address, cust_name, email, phone)
@@ -17,16 +17,16 @@ VALUES (4, '404 Redwood Drive', 'Customer 4', 'customer4@email.com', '555-999-00
 
 -- Bảng Product
 INSERT INTO products (product_id, description, manufacturer_name, name, status, unit)
-VALUES (3, 'Product 3 Description', 'Manufacturer C', 'Product 3', 'Active', 'Unit C');
+VALUES (3, 'Product 3 Description', 'Manufacturer C', 'Product 3', '1', 'Unit C');
 
 INSERT INTO products (product_id, description, manufacturer_name, name, status, unit)
-VALUES (4, 'Product 4 Description', 'Manufacturer D', 'Product 4', 'Active', 'Unit D');
+VALUES (4, 'Product 4 Description', 'Manufacturer D', 'Product 4', '1', 'Unit D');
 
 INSERT INTO products (product_id, description, manufacturer_name, name, status, unit)
-VALUES (5, 'Product 5 Description', 'Manufacturer E', 'Product 5', 'Active', 'Unit E');
+VALUES (5, 'Product 5 Description', 'Manufacturer E', 'Product 5', '1', 'Unit E');
 
 INSERT INTO products (product_id, description, manufacturer_name, name, status, unit)
-VALUES (6, 'Product 6 Description', 'Manufacturer F', 'Product 6', 'Active', 'Unit D');
+VALUES (6, 'Product 6 Description', 'Manufacturer F', 'Product 6', '1', 'Unit D');
 
 -- Bảng ProductImage
 INSERT INTO product_images (image_id, alternative, path, product_id)
