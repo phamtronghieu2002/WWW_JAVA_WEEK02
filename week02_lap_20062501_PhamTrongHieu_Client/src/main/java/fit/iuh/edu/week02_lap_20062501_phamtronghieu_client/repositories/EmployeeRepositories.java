@@ -100,7 +100,7 @@ public class EmployeeRepositories {
 
 
             java.util.Date utilDate = java.sql.Date.valueOf(localDate);
-            System.out.println(utilDate);
+
 
 
             employeeJson.put("dob", utilDate); // Convert Date to timestamp

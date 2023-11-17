@@ -20,7 +20,11 @@ public class ProductImage {
 
     private String alternative;
 
-    // Constructors, getters, and setters
+    public ProductImage(Long imageId, String path, String alternative) {
+        this.imageId = imageId;
+        this.path = path;
+        this.alternative = alternative;
+    }
 
     public ProductImage() {
     }

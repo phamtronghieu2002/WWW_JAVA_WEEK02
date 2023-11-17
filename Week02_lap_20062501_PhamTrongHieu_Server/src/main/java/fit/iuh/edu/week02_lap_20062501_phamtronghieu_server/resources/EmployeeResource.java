@@ -22,8 +22,6 @@ public class EmployeeResource {
         cusService.createEmployee(Employee);
         return Response.ok(Employee).build();
     }
-
-
     @GET
     @Produces("application/json")
     public Response getAll() {

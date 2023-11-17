@@ -2,6 +2,9 @@ package fit.iuh.edu.week02_lap_20062501_phamtronghieu_client.entities;
 
 import fit.iuh.edu.week02_lap_20062501_phamtronghieu_client.enums.ProductStatus;
 
+import java.util.ArrayList;
+import java.util.List;
+
 
 public class Product {
 
@@ -21,12 +24,16 @@ public class Product {
     private String manufacturerName;
 
 
-    private ProductStatus productStatus;
+        private ProductStatus productStatus;
+     private ArrayList<ProductImage> images;
+     private  ArrayList<ProductPrice> prices;
 
-    // Constructors, getters, and setters
 
     public Product() {
     }
+
+
+
 
     public Product(Long productId, String name, String description, String unit, String manufacturerName, ProductStatus productStatus) {
         this.productId = productId;
@@ -45,6 +52,37 @@ public class Product {
         this.productStatus = productStatus;
     }
     // Getters and setters
+
+    public Product(Long productId) {
+        this.productId = productId;
+    }
+
+    public ArrayList<ProductImage> getImages() {
+        return images;
+    }
+
+    public void setImages(ArrayList<ProductImage> images) {
+        this.images = images;
+    }
+
+    public ArrayList<ProductPrice> getPrices() {
+        return prices;
+    }
+
+    public void setPrices(ArrayList<ProductPrice> prices) {
+        this.prices = prices;
+    }
+
+    public Product(Long productId, String name, String description, String unit, String manufacturerName, ProductStatus productStatus, ArrayList<ProductImage> images, ArrayList<ProductPrice> prices) {
+        this.productId = productId;
+        this.name = name;
+        this.description = description;
+        this.unit = unit;
+        this.manufacturerName = manufacturerName;
+        this.productStatus = productStatus;
+        this.images = images;
+        this.prices = prices;
+    }
 
     public Long getProductId() {
         return productId;
@@ -102,9 +140,29 @@ public class Product {
         this.productStatus = productStatus;
     }
 
+
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (obj == null || getClass() != obj.getClass()) {
+            return false;
+        }
+        Product otherProduct = (Product) obj;
+        return productId == otherProduct.productId;
+    }
     @Override
     public String toString() {
-        return "Product [productId=" + productId + ", name=" + name + ", description=" + description + ", unit=" + unit
-                + ", manufacturerName=" + manufacturerName + ", status=" + productStatus + "]";
+        return "Product{" +
+                "productId=" + productId +
+                ", name='" + name + '\'' +
+                ", description='" + description + '\'' +
+                ", unit='" + unit + '\'' +
+                ", manufacturerName='" + manufacturerName + '\'' +
+                ", productStatus=" + productStatus +
+                ", images=" + images +
+                ", prices=" + prices +
+                '}';
     }
 }

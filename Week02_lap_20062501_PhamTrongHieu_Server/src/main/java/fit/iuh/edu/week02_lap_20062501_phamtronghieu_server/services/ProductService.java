@@ -2,8 +2,11 @@ package fit.iuh.edu.week02_lap_20062501_phamtronghieu_server.services;
 
 import fit.iuh.edu.week02_lap_20062501_phamtronghieu_server.enums.ProductStatus;
 import fit.iuh.edu.week02_lap_20062501_phamtronghieu_server.models.Product;
+import fit.iuh.edu.week02_lap_20062501_phamtronghieu_server.models.ProductImage;
+import fit.iuh.edu.week02_lap_20062501_phamtronghieu_server.models.ProductPrice;
 import fit.iuh.edu.week02_lap_20062501_phamtronghieu_server.repositories.ProductRepository;
 
+import javax.management.Query;
 import java.util.List;
 
 public class ProductService {
@@ -38,6 +41,14 @@ public class ProductService {
         return this.ProductDao.getProducts();
     }
 
+    public List<ProductImage> getProductImageById(long id)
+    {
+      return ProductDao.getProductImageById(id);
 
+    }
+    public List<ProductPrice> getProductPriceById(long id)
+    {
+        return ProductDao.getProductPricebyId(id);
 
+    }
 }

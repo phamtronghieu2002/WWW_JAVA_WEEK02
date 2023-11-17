@@ -1,8 +1,11 @@
 package fit.iuh.edu.week02_lap_20062501_phamtronghieu_client.repositories;
 import fit.iuh.edu.week02_lap_20062501_phamtronghieu_client.entities.Employee;
+import fit.iuh.edu.week02_lap_20062501_phamtronghieu_client.entities.ProductImage;
+import fit.iuh.edu.week02_lap_20062501_phamtronghieu_client.entities.ProductPrice;
 import fit.iuh.edu.week02_lap_20062501_phamtronghieu_client.enums.ProductStatus;
 import fit.iuh.edu.week02_lap_20062501_phamtronghieu_client.entities.Product;
 import org.apache.http.HttpResponse;
+import org.apache.http.client.ClientProtocolException;
 import org.apache.http.client.HttpClient;
 import org.apache.http.client.methods.HttpDelete;
 import org.apache.http.client.methods.HttpGet;
@@ -17,40 +20,126 @@ import java.io.IOException;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
+import java.sql.Date;
+import java.util.List;
 import java.util.Locale;
 
 public class ProductRepositories {
-    public static ArrayList<Product> getProducts() {
+
+    public static ArrayList<ProductPrice> getPriceById(long id) {
         HttpClient httpClient = HttpClientBuilder.create().build();
-        String apiUrl = "http://localhost:8080/week02/api/products";
+        String apiUrl = "http://localhost:8080/week02/api/products/" + id + "/price";
         var httpGet = new HttpGet(apiUrl);
-        ArrayList<Product> productList = new ArrayList<>();
+
+        ArrayList<ProductPrice> ProductPrices = new ArrayList<>();
 
         try {
             HttpResponse response = httpClient.execute(httpGet);
             String responseBody = EntityUtils.toString(response.getEntity());
 
-            // Chuyển đổi JSON thành mảng đối tượng (array of objects)
+            ArrayList<ProductPrice> productPrices = new ArrayList<>();
+            if (responseBody.startsWith("[")) {
+                JSONArray jsonArray = new JSONArray(responseBody);
+                for (int i = 0; i < jsonArray.length(); i++) {
+                    JSONObject obj = jsonArray.getJSONObject(i);
+
+                    double price = obj.getDouble("price");
+                    String note = obj.getString("note");
+                    Date priceDateTime = new Date(obj.getLong("priceDateTime"));
+
+                    ProductPrice productPrice = new ProductPrice(priceDateTime, price, note);
+
+                    ProductPrices.add(productPrice);
+                }
+            } else {
+
+                JSONObject jsonObject = new JSONObject(responseBody);
+                System.out.println("khong phai array ma la object:"+jsonObject);
+
+            }
+
+
+        } catch (ClientProtocolException e) {
+            throw new RuntimeException(e);
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+
+        return ProductPrices;
+    }
+    public static ArrayList<ProductImage> getImageById(long id) {
+        HttpClient httpClient = HttpClientBuilder.create().build();
+        String apiUrl = "http://localhost:8080/week02/api/products/" + id + "/image";
+        var httpGet = new HttpGet(apiUrl);
+        ArrayList<ProductImage> productImages = new ArrayList<>();
+
+        try {
+            HttpResponse response = httpClient.execute(httpGet);
+            String responseBody = EntityUtils.toString(response.getEntity());
+
             JSONArray jsonArray = new JSONArray(responseBody);
 
-            // Xử lý mảng đối tượng ở đây và thêm chúng vào danh sách sản phẩm
+            if (responseBody.startsWith("[")) {
+                for (int i = 0; i < jsonArray.length(); i++) {
+                    JSONObject obj = jsonArray.getJSONObject(i);
+
+
+                    Long product_id = obj.getLong("imageId");
+
+
+                    String path = obj.getString("path");
+                    String alternative = obj.getString("alternative");
+
+                    ProductImage productImage1 = new ProductImage(product_id, path, alternative);
+                    productImages.add(productImage1);
+
+                }
+
+            } else {
+                JSONObject jsonObject = new JSONObject(responseBody);
+                System.out.println("khong phai array ma la object:"+jsonObject);
+            }
+
+
+        } catch (ClientProtocolException e) {
+            throw new RuntimeException(e);
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+        return productImages;
+    }
+    public static ArrayList<Product> getProducts() {
+        HttpClient httpClient = HttpClientBuilder.create().build();
+        String apiUrl = "http://localhost:8080/week02/api/products";
+        var httpGet = new HttpGet(apiUrl);
+        ArrayList<Product> productList = new ArrayList<>();
+        try {
+            HttpResponse response = httpClient.execute(httpGet);
+            String responseBody = EntityUtils.toString(response.getEntity());
+
+
+            JSONArray jsonArray = new JSONArray(responseBody);
+
+
             for (int i = 0; i < jsonArray.length(); i++) {
                 JSONObject obj = jsonArray.getJSONObject(i);
 
-                // Lấy thông tin từ JSON và tạo đối tượng Product
-                Long product_id = obj.getLong("productId");
-                
 
+                Long product_id = obj.getLong("productId");
+                ArrayList<ProductImage>  images =getImageById(product_id);
+                ArrayList<ProductPrice>  prices =getPriceById(product_id);
+                System.out.println(images);
+                System.out.println(prices);
                 String name = obj.getString("name");
                 String description = obj.getString("description");
                 String unit = obj.getString("unit");
                 String manufacturer_name = obj.getString("manufacturerName");
                 ProductStatus status = ProductStatus.valueOf(obj.getString("status"));
 
-                Product product = new Product(product_id, name, description, unit, manufacturer_name, status);
+                Product product = new Product(product_id, name, description, unit, manufacturer_name, status,images,prices);
                 productList.add(product);
             }
-            System.out.println( productList );
+
         }
 
         catch (Exception e) {

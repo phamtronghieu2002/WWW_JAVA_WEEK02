@@ -4,31 +4,32 @@ import jakarta.persistence.*;
 
 import java.sql.Date;
 
-@Entity
-@Table(name = "product_prices")
+
 
 public class ProductPrice {
 
 
-    @Id
-    @ManyToOne
-    @JoinColumn(name = "product_id")
+
     private Product product;
 
-    @Id
-    @Column(name = "price_date_time")
     private Date priceDateTime;
 
 
 
-    @Column(name = "price")
+
     private double price;
 
-    @Column(name = "note")
+
     private String note;
 
     // Constructors, getters, and setters
     public ProductPrice() {
+    }
+
+    public ProductPrice(Date priceDateTime, double price, String note) {
+        this.priceDateTime = priceDateTime;
+        this.price = price;
+        this.note = note;
     }
 
     public ProductPrice(Product product, Date priceDateTime, double price, String note) {
